@@ -37,15 +37,21 @@ class LegoData {
     }
 
     getAllSets() {
-        return this.sets
+        return new Promise((resolve, reject ) => {
+            resolve(this.sets)
+        })
     }
 
     getSetByNum(setNum) {
-        return this.sets.find((ele) => ele.set_num == setNum)
+        return new Promise((resolve, reject) => {
+            resolve(this.sets.find((ele) => ele.set_num == setNum))
+        }) 
     }
 
     getSetsByTheme(theme) {
-        return this.sets.filter((element) => element.theme.toLowerCase().includes(theme))
+        return new Promise((resolve, reject) => {
+            resolve(this.sets.filter((element) => element.theme.toLowerCase().includes(theme)))
+        }) 
     }
 }
 

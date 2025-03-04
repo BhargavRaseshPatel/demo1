@@ -10,7 +10,7 @@
   Student ID: 116520248 
   Date: February 14, 2025
 
-  Published URL : 
+  Published URL : https://demo1-blue-xi.vercel.app/
 *
 ********************************************************************************/
 
